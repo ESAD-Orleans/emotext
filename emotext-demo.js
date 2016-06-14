@@ -119,8 +119,10 @@ $(document).ready(function () {
 	});
 
 	function displayMessage(messageHtml,from){
-		div = $('<div class="message '+from+'"></div>').html(messageHtml);
+		if(messageHtml.length <= 0) return;
+		var div = $('<div class="message '+from+'"></div>').html(messageHtml);
 		$('.chat').append(div);
+		$('.chat').scrollTop($('.chat')[0].scrollHeight);
 	}
 
 

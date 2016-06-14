@@ -1,0 +1,30 @@
+html,body{
+  font-family: "Arial", sans-serif;
+}
+.mce-panel {
+  height: 100px; }
+
+.chat{
+  height:300px;
+  border:solid 1px #ccc;
+  border-bottom: none;
+  padding: 40px;
+  overflow: auto;
+}
+.message{
+  border-radius: 20px;
+  border:solid 1px #999;
+  padding: 10px;
+  margin: 0 0 10px;
+  width:60%;
+  p{
+    margin: 0;
+    font-size:16px;
+    .emotext{
+      > span{
+        color:transparent;
+      }
+    }
+  }
+}
+@import "mce-override";

@@ -1,0 +1,3 @@
+[submodule "spacebrew"]
+	path = spacebrew
+	url = https://github.com/spacebrew/spacebrew.js

@@ -1,0 +1,75 @@
+p {
+  font-size: 40px;
+  font-family: Arial;
+  color: #000; }
+
+.emotext {
+  position: relative;
+  display: inline-block; }
+  .emotext:before {
+    content: ' ';
+    display: inline-block;
+    width: 2.22em;
+    height: 1.25em;
+    background-size: 100% 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .emotext.ahb:before {
+    background-image: url(images/emotext/ahb.gif); }
+  .emotext.ahc:before {
+    background-image: url(images/emotext/ahc.gif); }
+  .emotext.ahp:before {
+    background-image: url(images/emotext/ahp.gif); }
+  .emotext.bah:before {
+    background-image: url(images/emotext/bah.gif); }
+  .emotext.euh:before {
+    background-image: url(images/emotext/euh.gif); }
+  .emotext.hein:before {
+    background-image: url(images/emotext/hein.gif); }
+  .emotext.heyf:before {
+    background-image: url(images/emotext/heyf.gif); }
+  .emotext.heyl:before {
+    background-image: url(images/emotext/heyl.gif); }
+  .emotext.heyt:before {
+    background-image: url(images/emotext/heyt.gif); }
+  .emotext.mmmb:before {
+    background-image: url(images/emotext/mmmb.gif); }
+  .emotext.mmmr:before {
+    background-image: url(images/emotext/mmmr.gif); }
+  .emotext.mouhahaha:before {
+    background-image: url(images/emotext/mouhahaha.gif); }
+  .emotext.oh:before {
+    background-image: url(images/emotext/oh.gif); }
+  .emotext.oks:before {
+    background-image: url(images/emotext/oks.gif); }
+  .emotext.okxd:before {
+    background-image: url(images/emotext/okxd.gif); }
+  .emotext.ooh:before {
+    background-image: url(images/emotext/ooh.gif); }
+  .emotext.ou\!:before {
+    background-image: url(images/emotext/ou\!.gif); }
+  .emotext.oui\!:before {
+    background-image: url(images/emotext/oui\!.gif); }
+  .emotext.ouiii:before {
+    background-image: url(images/emotext/ouiii.gif); }
+  .emotext.tkt:before {
+    background-image: url(images/emotext/tkt.gif); }
+  .emotext.bah:before {
+    width: 1.93em; }
+  .emotext.ahb:before {
+    width: 1.98em; }
+  .emotext.mmmb:before {
+    width: 3.09em; }
+  .emotext.mmmr:before {
+    width: 3.09em; }
+  .emotext.ooh:before {
+    width: 3.09em; }
+  .emotext.mouhahaha:before {
+    width: 5.83em; }
+  .emotext > span {
+    color: rgba(0, 0, 0, 0.2); }
+
+/*# sourceMappingURL=mce-override.css.map */

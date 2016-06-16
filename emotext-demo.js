@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 	tinymce.init({
 		selector: '#field',
-		height: 240,
+		height: $('#field').height(),
 		menubar: false,
 		toolbar: false,
 		statusbar: false,
@@ -66,14 +66,14 @@ $(document).ready(function () {
 						startOffset = rng.startOffset,
 						endOffset = rng.endOffset;
 					e.target.$('body').html(customContent);
-					console.log(customContent);
+					//console.log(customContent);
 					var nodeText = e.target.$('p')[0].lastChild,
 						range = document.createRange(),
 						body = e.target.$('body')[0];
 					//console.log(rng,startOffset,endOffset);
-					console.log(rng.startContainer, startOffset);
-					console.log(rng.endContainer, endOffset);
-					console.log(nodeText);
+					//console.log(rng.startContainer, startOffset);
+					//console.log(rng.endContainer, endOffset);
+					//console.log(nodeText);
 					//console.log(rng);
 					range.setStart(nodeText, 1);
 					range.setEnd(nodeText, 1);

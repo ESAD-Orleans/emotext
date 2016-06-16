@@ -1,12 +1,14 @@
 html, body {
-  font-family: "Arial", sans-serif; }
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  overflow: hidden; }
 
 .mce-panel {
   height: 100px; }
 
 .chat {
-  height: 300px;
-  border: solid 1px #ccc;
+  box-sizing: border-box;
+  height: calc(100vh - 240px);
   border-bottom: none;
   padding: 40px;
   overflow: auto; }
@@ -24,6 +26,13 @@ html, body {
     font-size: 16px; }
     .message p .emotext > span {
       color: transparent; }
+
+.mce-panel.mce-tinymce {
+  border-left: 0;
+  border-right: 0; }
+
+.mce-stack-layout-item {
+  border-top: 0 !important; }
 
 p {
   font-size: 40px;
@@ -84,10 +93,6 @@ p {
     background-image: url(images/emotext/ouiii.gif); }
   .emotext.tkt:before {
     background-image: url(images/emotext/tkt.gif); }
-  .emotext.bah:before {
-    width: 1.93em; }
-  .emotext.ahb:before {
-    width: 1.98em; }
   .emotext.mmmb:before {
     width: 3.09em; }
   .emotext.mmmr:before {
@@ -97,6 +102,20 @@ p {
   .emotext.mouhahaha:before {
     width: 5.83em; }
   .emotext > span {
-    color: rgba(0, 0, 0, 0.2); }
+    color: transparent; }
+
+#field {
+  height: 240px; }
+
+@media screen and (max-width: 800px) {
+  .chat {
+    height: calc(100vh - 200px);
+    padding: 10px; }
+
+  p {
+    font-size: 24px; }
+
+  #field {
+    height: 200px; } }
 
 /*# sourceMappingURL=emotext.css.map */

@@ -1,0 +1,68 @@
+
+p{
+  font-size:40px;
+  font-family: Arial;
+  color:#000;
+}
+
+$words : ahb ahc ahp bah euh hein heyf heyl heyt mmmb mmmr mouhahaha oh oks okxd ooh ou\! oui\! ouiii tkt;
+$words-309 : mmmb mmmr;
+$words-311 : ooh;
+$words-583 : mouhahaha;
+.emotext {
+  position: relative;
+  display: inline-block;
+  &:before {
+    content: ' ';
+    display: inline-block;
+    //
+    width: 2.22em;
+    height: 1.25em;
+    background-size: 100% 100%;
+    position: absolute;
+    pointer-events: none;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  @each $word in $words{
+    &.#{$word}:before{
+      background-image:url(images/emotext/#{$word}.gif);
+    }
+  }
+  @each $word in $words-309{
+    &.#{$word}:before{
+      width:3.09em;
+    }
+  }
+  @each $word in $words-311{
+    &.#{$word}:before{
+      width:3.09em;
+    }
+  }
+  @each $word in $words-583{
+    &.#{$word}:before{
+      width:5.83em;
+    }
+  }
+  > span{
+    color:rgba(0,0,0,0);
+  }
+}
+
+#field{
+  height: 240px;
+}
+
+@media screen and (max-width: 800px) {
+  .chat{
+    height:calc(100vh - 200px);
+    padding: 10px;
+  }
+  p{
+    font-size:24px;
+  }
+  #field{
+    height: 200px;
+  }
+}

@@ -57,10 +57,6 @@ p {
     background-image: url(images/emotext/ouiii.gif); }
   .emotext.tkt:before {
     background-image: url(images/emotext/tkt.gif); }
-  .emotext.bah:before {
-    width: 1.93em; }
-  .emotext.ahb:before {
-    width: 1.98em; }
   .emotext.mmmb:before {
     width: 3.09em; }
   .emotext.mmmr:before {
@@ -70,6 +66,20 @@ p {
   .emotext.mouhahaha:before {
     width: 5.83em; }
   .emotext > span {
-    color: rgba(0, 0, 0, 0.2); }
+    color: transparent; }
+
+#field {
+  height: 240px; }
+
+@media screen and (max-width: 800px) {
+  .chat {
+    height: calc(100vh - 200px);
+    padding: 10px; }
+
+  p {
+    font-size: 24px; }
+
+  #field {
+    height: 200px; } }
 
 /*# sourceMappingURL=mce-override.css.map */

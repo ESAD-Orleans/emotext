@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 	var editor, replacementCount = 0;
-	var regexp = /(ahb|ahc|ahp|bah|euh|hein|heyf|heyt|heyp|mmm|mouhahaha|oh|ok|okxd|ooh|ou!|oui!|ouiii|tkt)/g;
+	var regexp = /(ahb|ahc|ahp|bah|euh|hein|heyf|heyl|heyt|mmmr|mmms|mouhahaha|oh|okxd|ok|ooh|ou!|oui!|ouiii|tkt)/g;
 
 	tinymce.init({
 		selector: '#field',
@@ -101,7 +101,11 @@ $(document).ready(function () {
 			}
 
 			//ed.on('NodeChange',change);
-			ed.on('submit', KeyDown);
+			$('#textinput').on('submit', function(e){
+				e.preventDefault();
+				e.stopPropagation();
+				KeyDown();
+			});
 			ed.on('keydown', KeyDown);
 			ed.on('keyup', change);
 			ed.on('BeforeSetContent', log);

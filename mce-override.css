@@ -80,6 +80,9 @@ p {
     font-size: 24px; }
 
   #field {
-    height: 200px; } }
+    height: 200px; }
+
+  .mce-content-body {
+    padding: 0 20px !important; } }
 
 /*# sourceMappingURL=mce-override.css.map */
